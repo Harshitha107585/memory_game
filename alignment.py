@@ -1,0 +1,17 @@
+import tkinter
+root = tkinter.Tk()
+root.geometry("300x200")
+root.title("Student reg form")
+root.config(bg = "#000156")
+name_label = tkinter.Label(root,text ="Enter your name")
+name_label.pack(anchor=tkinter.W,padx=10)
+name = tkinter.Entry(root)
+name.pack(anchor=tkinter.W,padx=10)
+email_label = tkinter.Label(root,text="enter your email")
+email_label.pack()
+email = tkinter.Entry(root)
+email.pack()
+
+submit = tkinter.Button(root,text = "Submit")
+submit.pack()
+root.mainloop()
